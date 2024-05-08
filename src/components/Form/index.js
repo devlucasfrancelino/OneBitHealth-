@@ -6,7 +6,7 @@ export default function Form() {
     
     const [altura, setAltura] = useState(null);
     const [peso, setPeso] = useState(null);
-    const [resultIMC, setResultIMC] = useState(23);
+    const [resultIMC, setResultIMC] = useState();
     const [messageIMC, setMessageIMC] = useState('Preencha o peso e altura');
     const [textButton, setTextButton] = useState("Calcular");
 
@@ -31,7 +31,6 @@ export default function Form() {
         setMessageIMC('Preencha o peso e altura');
         Keyboard.dismiss()
       }
-    
     
     return (
         <View style={styles.container}>
